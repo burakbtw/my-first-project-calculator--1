@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Burak Erdaloğlu Hesap Makinesi</title>
+  </head>
+
+  <body>
+
+    <h1 style="text-align:center">---Burak Erdaloğlu--- </h1>
+    <form>
+      <input type="text" id="snc" disabled />
+            <br />
+
+      <br />
+      <input type="button" id="btnsil" value="<" onclick="snc.value = snc.value.substring(0, snc.value.length - 1)" />
+      <br />
+      <br />
+
+      <input type="button" id="btnsayi" value="1" onclick="snc.value +='1'" />
+      <input type="button" id="btnsayi" value="2" onclick="snc.value +='2'" />
+      <input type="button" id="btnsayi" value="3" onclick="snc.value +='3'" />
+      <input type="button" id="btnfnc" value="+" onclick="snc.value +='+'" />
+      <br />
+      <input type="button" id="btnsayi" value="4" onclick="snc.value +='4'" />
+      <input type="button" id="btnsayi" value="5" onclick="snc.value +='5'" />
+      <input type="button" id="btnsayi" value="6" onclick="snc.value +='6'" />
+      <input type="button" id="btnfnc" value="-" onclick="snc.value +='-'" />
+      <br />
+      <input type="button" id="btnsayi" value="7" onclick="snc.value +='7'" />
+      <input type="button" id="btnsayi" value="8" onclick="snc.value +='8'" />
+      <input type="button" id="btnsayi" value="9" onclick="snc.value +='9'" />
+      <input type="button" id="btnfnc" value="X" onclick="snc.value +='*'" />
+      <br />
+      <input type="button" id="btnfnc" value="C" onclick="snc.value =''" />
+      <input type="button" id="btnsayi" value="0" onclick="snc.value +='0'" />
+      <input
+        type="button"
+        id="btnfnc"
+        value="="
+        onclick="snc.value = eval (snc.value)"
+      />
+      <input type="button" id="btnfnc" value="/" onclick="snc.value +='/'" />
+    </form>
+  </body>
+
+  <style>
+
+    #btnsil 
+    {
+     padding: 10px 148px;
+    }
+    form {
+      text-align: center;
+          }
+
+    #snc {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: 3px solid black;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    input[type='button'] {
+      padding: 25px 25px;
+      font-size: 23px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    #btnsayi {
+      background-color: yellow;
+    }
+
+    #btnfnc {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+<BR> 
+  <h1 style="text-align:center"> BİR HER ZAMAN SIFIRDAN İYİDİR </h1>
+   <BR>
+   <h1 style="text-align:right">Burak Erdaloğlu </h1>
+   
+</html>
